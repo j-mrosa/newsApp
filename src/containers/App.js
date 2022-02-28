@@ -14,7 +14,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('https://api.mediastack.com/v1/news?access_key=857308bce99270b6987a3c860e4382ae&sources=cnn&languages=en')
+    fetch('http://api.mediastack.com/v1/news?access_key=857308bce99270b6987a3c860e4382ae&sources=cnn&languages=en')
       .then(response=> response.json())
       .then((news) => {this.setState({ news: news.data})});
   }
