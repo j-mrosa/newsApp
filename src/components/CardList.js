@@ -3,7 +3,7 @@ import Card from './Card';
 
 const CardList = ({ news }) => {
   return (
-    <div>
+    <div className='columns'>
       {
         news.map((data, i) => {
           return (
